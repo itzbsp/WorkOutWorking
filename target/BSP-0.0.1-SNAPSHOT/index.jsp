@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>WORKOUTTRACKER</title>
 
-<link rel="icon" type="image/ico" href="workout2.ico">
+<link rel="icon" type="image/x-icon" href="images.ico">
 
 <style>
 h1 { text-align : center ;text-decoration : underline ; color : #800000 ;}
