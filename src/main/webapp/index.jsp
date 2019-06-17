@@ -84,14 +84,27 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
             <input id="userName" type="text" placeholder="Enter Email / User Name" value=""/>
             <label for="password"><font color="white"><b>Password</b></font></label>
             <input id="userPw" type="password" placeholder="Enter Password" value=""/>
-            <input id="login_btn" type="reset" value="Login" class="btnr" onClick="check()"/> <input type="submit" class="btnr" value="Sign Up" formaction="Signup.jsp"/>
+            <input id="login_btn1" type="button" value="Login" class="btnr" onClick="check()"/>
+             <button id="login_btn" onClick="check()"></button> 
+             <input type="submit" class="btnr" value="Sign Up" formaction="Signup.jsp"/>
        </form>
   </div>
   </div>
 </form>
 <script type="text/javascript">
+
+ var input = document.getElementById("userPw");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("login_btn").click();
+  }
+}); 
+
+
 function check() {
 
+	
     // stored data from the register-form
     var storedName = localStorage.getItem('email');
     var storedPw = localStorage.getItem('password');
@@ -102,13 +115,17 @@ function check() {
 
     // check if stored data from register-form is equal to data from login form
    if(userName.value == storedName && userPw.value == storedPw) {
-	  /* window.open("work.html"); */
-	   window.location.href= ('work.html');
+	   /*  window.open("work.jsp"); */  
+	    	window.location.href= ('work.jsp'); 
+	   /* setTimeout(function(){document.location.href = "work.jsp;"},500); */
+	   /* window.location("work.jsp"); */
+	   
+
     }else {
         alert('Invalid Credentials');
         
     }
-}
+    	}
  </script>
 </body>
 </html>

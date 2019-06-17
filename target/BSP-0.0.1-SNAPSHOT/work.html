@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.logoutLblPos{
+
+   position:fixed;
+   right:10px;
+   top:5px;
+}
+* {
+  box-sizing: border-box;
+}
+.bg {
+  /* The image used */
+  background-image: url("Background.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+  border-radius: 3px;
+  background-color: #0080ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
 </head>
 <body>
-<p>Add workout time</p>
-</body>
+<div class="bg" align="center">
+
+</div>
+<form align="right" name="form1" method="post" action="index.jsp">
+  <label class="logoutLblPos">
+  <input name="submit2" type="submit" id="submit2" class="button" value="Log Out">
+  </label>
+  </form>
+  </body>
 </html>
