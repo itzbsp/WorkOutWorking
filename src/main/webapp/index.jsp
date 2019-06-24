@@ -3,6 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welcome to the Workout Login</title>
+
+
 <style>
 body, html {
   height: 100%;
@@ -77,6 +79,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
 <body>
 
 <div class="bg" align="center">
+
   <form name="workout" class="container" >
    
   <form id="login-form"> 
@@ -85,7 +88,6 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
             <label for="password"><font color="white"><b>Password</b></font></label>
             <input id="userPw" type="password" placeholder="Enter Password" value=""/>
             <input id="login_btn1" type="button" value="Login" class="btnr" onClick="check()"/>
-             <button id="login_btn" onClick="check()"></button> 
              <input type="submit" class="btnr" value="Sign Up" formaction="Signup.jsp"/>
        </form>
   </div>

@@ -2,20 +2,65 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome to the Workout Sign Up</title>
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
-
-
 * {
   box-sizing: border-box;
 }
-.bg {
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.logoutLblPos{
+
+   position:fixed;
+   right:30px;
+   top:5px;
+   
+}
+.logoutLbl{
+
+   position:fixed;
+   left:30px;
+   top:5px;
+   
+}
+
+.Count{
+
+   position:fixed;
+   right:650px;
+   
+   
+}
+
+.clear{
+
+   position:fixed;
+   right:650px;
+   bottom:250px;border-radius: 3px;
+  background-color: #0080ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* .bg {
   /* The image used */
-  background-image: url("Background.jpg");
+  /* background-image: url("WorkChalk.jpg"); */
 
   /* Full height */
   height: 100%; 
@@ -25,28 +70,91 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
-  max-width: 450px;
-  border: 1px solid #73AD21;
-  padding: 10px;
-  text-align: center;
+ */
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 8px;
+}
+
+.button1 {
+  border-radius: 3px;
+  background-color: #0080ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
   
 }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
+
+
+.dropbtn {
+  background-color: #666699;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
   border: none;
-  background: #f1f1f1;
+  margin-left:140px;
+  border-radius: 11px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #666699;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 17px;
+  margin-left:140px;
+  border-radius: 11px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 12px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #1f1f2e;}
 
 .btnr {
   color: black;
@@ -61,82 +169,125 @@ input[type=text], input[type=password] {
 .btnr:hover {
   opacity: 1;
 }
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+
+* {
   outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #0080ff;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
   border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+  padding: 0;
 }
 
-.registerbtn:hover {
-  opacity: 1;
+body {
+  background-image: url("WorkChalk.jpg");
+   /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
+body {
+	background-color : #484848;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	color : #000000;
+	text-align : center;
+	font-family: "SIMPSON";
+}
+form {
+	width: 150px;
+	margin: 0 auto;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
+
+input[type=text] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid black;
 }
 </style>
 </head>
 <body>
-<div class="bg" align="center">
-<form class="container">
-  
-  
-    <font color="white"><h1></h1>
-    <p>Please Enter the timing you have spent</p>
-    <hr>
 
-    <label for="email"><b>Email/User Name</b></label>
-    <input type="text" placeholder="Enter Email / User Name"  id="email" value="" required>
-    <input type="submit" class="registerbtn" id="rgstr_btn" value="Register" onClick="store();myMessage()">
-    <div class="container signin">
-    <p>Already have an account? <a href="index.jsp">Sign in</a>.</p>
-    
-  </div>
-  </div>
+<div class="bg">
+
+   <div>
+    <h1>Enter the Count to Store</h1>
+
+    <form >
+      <input  id="item" type="text" placeholder="Enter the Value" class="">
+      
+
+   	 
+    <ol style="font-size:1.5em" class="Count"></ol>
 </form>
-<script>
-function myMessage() {
-   alert("Thank you for Registering"); 
+    <button class="clear">Clear</button>
+  </div>
   
+
+</div>
+<script language="javascript">
+const form = document.querySelector('form');
+const ol = document.querySelector('ol');
+const button = document.querySelector('button');
+const input = document.getElementById('item');
+let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+
+localStorage.setItem('items', JSON.stringify(itemsArray));
+const data = JSON.parse(localStorage.getItem('items'));
+
+const liMaker = (text) => {
+  const li = document.createElement('li');
+  li.textContent = text;
+  ol.appendChild(li);
 }
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  itemsArray.push(input.value);
+  localStorage.setItem('items', JSON.stringify(itemsArray));
+  liMaker(input.value);
+  input.value = "";
+});
+
+data.forEach(item => {
+  liMaker(item);
+});
+
+button.addEventListener('click', function () {
+  localStorage.clear();
+  while (ol.firstChild) {
+    ol.removeChild(ol.firstChild);
+  }
+  itemsArray = [];
+});
 
 </script>
 
-  <script language="javascript">
-  
-    // Name and Password from the register-form
-var email = document.getElementById('email');
-var password = document.getElementById('password');
+<div class="container">
+  <div class="content">
+    <h3>GOOD THINGS COME TO THOSE WHO SWEAT</h3>
+    <p>To record the Workout data, please enter the counts</p>
+    <form class="container" align="right" name="form1" method="post" action="index.jsp">
+  <label class="logoutLblPos">
+  <input name="submit2" type="submit" id="submit2" class="button1" value="Log Out">
+  </label>
+  </form>
+  <form class="container" align="right" name="form1" method="post" action="work.jsp">
+  <label class="logoutLbl">
+  <input name="submit2" type="submit" id="submit2" class="button1" value="Main Menu">
+  </label>
+  </form>
+  </div>
+  </div>
+</div>
 
-// storing input from register-form
-function store() {
-    localStorage.setItem('email', email.value);
-    localStorage.setItem('password', password.value);
-}
- </script>
 </body>
 </html>

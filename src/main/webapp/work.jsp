@@ -127,32 +127,32 @@ body, html {
   <button class="dropbtn">BICEPS  </button>
   <div class="dropdown-content">
     <a href="Link.html">Cable  </a>
-    <a href="#">Hammer </a>
-    <a href="#">Reverse</a>
+    <a href="Link.html">Hammer </a>
+    <a href="Link.html">Reverse</a>
   </div>
 </div>
 <div class="dropdown">
   <button class="dropbtn">CARDIO   </button>
   <div class="dropdown-content">
-    <a href="#">Pilates</a>
-    <a href="#">Spinning</a>
-    <a href="#">Treadmill</a>
+    <a href="Link.html">Pilates</a>
+    <a href="Link.html">Spinning</a>
+    <a href="Link.html">Treadmill</a>
   </div>
 </div>
 <div class="dropdown">
   <button class="dropbtn">GLUTES</button>
   <div class="dropdown-content">
-    <a href="#">Bridge </a>
-    <a href="#">Barbell </a>
-    <a href="#">Leg Lift</a>
+    <a href="Link.html">Bridge </a>
+    <a href="Link.html">Barbell </a>
+    <a href="Link.html">Leg Lift</a>
   </div>
   </div>
   <div class="dropdown">
   <button class="dropbtn">TRICEPS</button>
   <div class="dropdown-content">
-    <a href="#">CloseGrip</a>
-    <a href="#">Kickback</a>
-    <a href="#">PushDown</a>
+    <a href="Link.html">CloseGrip</a>
+    <a href="Link.html">Kickback</a>
+    <a href="Link.html">PushDown</a>
   </div>
 </div>
 
